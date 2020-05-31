@@ -7,6 +7,7 @@
 ul, li, body{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .container{
@@ -33,8 +34,6 @@ ul, li, body{
         margin: 0 auto;
 
         width: max-content;
-
-        list-style: none;
 
         color: #fff;
         font-size: 14px;
@@ -107,3 +106,99 @@ ul, li, body{
 }
 // Блок с информации о компании Конец 
 
+// Услуги компании примеры
+.feature{
+    &__wrapper{
+        padding-top: 105px;
+
+        border-top: 2px solid #ececec;
+    }
+
+    &__header{
+        position: relative;
+
+        margin: 0 auto;
+        padding-bottom: 30px;
+
+        width: 520px;
+
+        &::after{
+            content: "";
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+
+            margin-left: -65px;
+
+            width: 130px;
+            height: 2px;
+
+            background-color: $main-red;
+
+            box-shadow: 0 1px 0 0px #ffd5d5;
+        }
+    }
+
+    &__title{
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__info{
+        margin: 0;
+
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__footer{
+        margin-top: 90px;
+    }
+
+    &__options{
+        display: flex;
+        justify-content: start;
+
+        margin: 0 auto;
+
+        width: max-content;
+
+        &-item{
+            padding: 0 30px;
+
+            text-transform: uppercase;
+        }
+
+        &--active,
+        &-item:hover,
+        &-item:active{
+            color: $main-red;
+        }
+    }
+
+    &__view{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+
+        margin-top: 65px;
+
+        &-item{
+            margin-bottom: 15px;
+
+            width: 300px;
+            height: 300px;
+
+            background-color: #f5f0dd;
+        }
+    }
+}
+// Услуги компании примеры Конец
