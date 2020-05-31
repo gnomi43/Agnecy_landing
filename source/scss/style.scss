@@ -107,3 +107,92 @@ ul, li, body{
 }
 // Блок с информации о компании Конец 
 
+//Блок о том что мы можем вам предложить
+.provide{  
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &::after{
+        content: '';
+        display: block;
+        height: 2px;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 1250px;
+        background-color: #ececec;
+        margin-bottom: 50px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+    &__leftContent{
+        width: 500px;
+    }
+    &__title{
+        opacity: 0.8;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 55px;
+        text-transform: uppercase;
+        letter-spacing: 0.42px;
+    }
+    &__text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    &__button{
+        display: block;
+        width: max-content;
+        margin-top: 40px;
+        padding: 15px 70px;
+        color: $main-red;
+        border: 2px solid $main-red;
+        border-radius: 5px;
+
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.32px;
+        transition-duration: 0.2s;
+
+        &:hover{
+            background-color: $main-red;
+            color: white;
+        }
+    }
+    &__rightContent{
+        width: 620px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .services{
+        &__content{
+        width: 290px;
+        min-height: 230px;
+        margin-bottom: 40px;
+        }
+        &__title{
+            opacity: 0.7;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.27px;
+        }
+        &__text{
+            opacity: 0.7;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            //TODO сделать перенос слов на новую строку через дефис
+        }
+        img{ 
+            width: 40px;
+        }
+    }
+}
+
+
