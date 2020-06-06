@@ -432,6 +432,74 @@ ul, li, body{
 // Наша команда Конец
 
 
+// Подписка
+.subscribe{
+    margin-top: 110px;
+    padding: 140px 0;
+
+    background-color: $bg-photo;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: max-content;
+
+        text-align: center;
+        color: #fff;
+    }
+
+    &__title{
+        margin: 0;
+        margin-bottom: 40px;
+
+        font-size: 42px;
+    }
+
+    &__info{
+        margin: 0;
+        margin-bottom: 60px;
+
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__form{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__input{
+        margin-right: 20px;
+        padding: 25px 20px;
+
+        width: 520px;
+
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__button{
+        display: block;
+        width: 215px;
+        
+        border: none;
+        border-radius: 5px;
+
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        transition: .2s;
+        
+        background-color: $main-red;
+    }
+}
+// Подписка Конец
+
 //Контакты компании
 
 .contact {
