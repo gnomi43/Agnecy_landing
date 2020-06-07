@@ -177,7 +177,7 @@
         </section>
 
         <section class="contact">
-            <div class="contact__wrapper">
+            <div class="contact__wrapper container">
                 <div class="contact__title">
                     get in touch
                 </div>
@@ -186,26 +186,24 @@
                     adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor
                     incididunt ut labore et.
                 </div>
-                <div class="contact__body">
-                    <div class="contact__email email">
-                        <div class="email__userInfo">
-                            <input class="email__userContact" placeholder="Name" />
-                            <input class="email__userContact" placeholder="Your Mail" />
-                        </div>
-                        <textarea type="text" class="email__message" placeholder="Type your message"></textarea>
-                        <a class="email__button">SEND MESSAGE</a>
+                <form class="contact__form email" action="https://echo.htmlacademy.ru/">
+                    <div class="email__userInfo">
+                        <input class="email__userContact" placeholder="Name" type="name" name="name" />
+                        <input class="email__userContact" placeholder="Your Mail" type="mail" name="mail" />
                     </div>
-                    <div class="contact__info info">
-                        <span class="info__title">contact info</span>
-                        <p class="info__text">Jalalabad 24 / A, Ambaarkhana, Sylhet, 
-                            Bangladesh</p>
-                        <p class="info__text">redwan@deviserweb.com</p>
-                        <p class="info__text">(+88) 017 617 46373</p>                        
-                    </div>
-                </div>
+                    <textarea type="text" class="email__message" placeholder="Type your message" type="message" name="message"></textarea>
+                    <button class="email__button" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div class="contact__info info">
+                <span class="info__title">contact info</span>
+                <p class="info__text">Jalalabad 24 / A, Ambaarkhana, Sylhet,
+                    Bangladesh</p>
+                <p class="info__text">redwan@deviserweb.com</p>
+                <p class="info__text">(+88) 017 617 46373</p>
             </div>
         </section>
-    </main>
+        </main>
 
     <footer class="footer">
         <div class="footer__wrapper container">

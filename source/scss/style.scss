@@ -503,11 +503,11 @@ ul, li, body{
 //Контакты компании
 
 .contact {
-
+    position: relative;
     &__wrapper {
         margin-top: 100px;
-        margin-right: 0px;
-        margin-left: 270/1580*100%;
+        //margin-right: 0px;
+        //margin-left: 270/1580*100%;
         margin-bottom: 140px;
         //TODO блок плавает, я так и не придумал как его норм закрепить 
     }
@@ -540,17 +540,14 @@ ul, li, body{
         }
     }
 
-    &__body {
-        display: flex;
-        flex-direction: raw;
-        justify-content: space-between;
-    }
-
-    &__email {
+    &__form {
         width: 730px;
     }
 
     &__info {
+        position: absolute;
+        top: 300px;
+        right: 0px;
     }
 }
 .email {
@@ -577,7 +574,7 @@ ul, li, body{
         line-height: 28px;
 
         &:focus{     
-            //TODO возмлжно поигаться с цветом
+            //TODO возможно поигаться с цветом
             border: solid 2px #5f0d0d9c;
             outline: none;
         }
@@ -612,7 +609,7 @@ ul, li, body{
         background-color: $main-red;
         border: none;
         border-radius: 5px;
-        padding-top: 23px;
+        padding-top: 8px;
         //padding: 30px 300px;
 
         font-size: 16px;
