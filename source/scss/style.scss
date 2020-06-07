@@ -286,11 +286,219 @@ ul, li, body{
             width: 300px;
             height: 300px;
 
-            background-color: #f5f0dd;
+            background-color: $bg-photo;
         }
     }
 }
 // Услуги компании примеры Конец
+
+
+// Наша команда
+.team{
+
+    &__header-title{
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__header-info{
+        position: relative;
+
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 130px;
+
+        max-width: 450px;
+
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+
+        &::after{
+            content: "";
+
+            position: absolute;
+            bottom: -65px;
+            left: 0;
+
+            width: 100px;
+            height: 2px;
+
+            background-color: $main-red;
+        }
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__footer-left{
+        width: 320px;
+        height: 460px;
+
+        background-color: $bg-photo;
+    }
+
+    &__footer-rigth{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__footer-photo{
+       display: none; 
+    }
+
+    &__footer-title{
+        margin-top: 10px;
+
+        font-size: 30px;
+        line-height: 42px;
+
+        text-transform: uppercase;
+    }
+
+    &__footer-info{
+        max-width: 650px;
+
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    &__footer-links{
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 370px;
+
+        & a{
+            font-size: 18px;
+            line-height: 24px;
+            
+            font-weight: 300;
+            font-style: italic;
+
+            color: #000;
+
+            text-decoration: none;
+
+            &:hover{
+                color: $main-red;
+            }
+        }
+    }
+
+    &__footer-team{
+        display: flex;
+        justify-content: space-between;
+
+        min-width: 850px;
+    }
+
+    &__footer-member{
+        display: flex;
+        flex-direction: column-reverse;
+
+        width: 200px;
+        height: 215px;
+
+        background-color: $bg-photo;
+
+        .footer-member__name{
+            opacity: 0;
+            transition: .55s opacity, .55s visibility;
+            visibility: hidden;
+
+            padding: 5px 0;
+
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 18px;
+            color: #fff;
+
+            background-color: $main-gray;
+        }
+
+        &:hover .footer-member__name{
+            opacity: 0.7;
+            visibility: visible;
+        }
+    }
+
+}
+// Наша команда Конец
+
+
+// Подписка
+.subscribe{
+    margin-top: 110px;
+    padding: 140px 0;
+
+    background-color: $bg-photo;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: max-content;
+
+        text-align: center;
+        color: #fff;
+    }
+
+    &__title{
+        margin: 0;
+        margin-bottom: 40px;
+
+        font-size: 42px;
+    }
+
+    &__info{
+        margin: 0;
+        margin-bottom: 60px;
+
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__form{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__input{
+        margin-right: 20px;
+        padding: 25px 20px;
+
+        width: 520px;
+
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__button{
+        display: block;
+        width: 215px;
+        
+        border: none;
+        border-radius: 5px;
+
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        transition: .2s;
+        
+        background-color: $main-red;
+    }
+}
+// Подписка Конец
 
 //Контакты компании
 
