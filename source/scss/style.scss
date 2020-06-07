@@ -650,3 +650,39 @@ ul, li, body{
         line-height: 28px;
     }
 }
+
+
+//Footer
+.footer {
+    background-color: #313030;
+    height: 111px;
+    padding-top: 50px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+    }
+
+    &__text {
+        color: #b8b8b8;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__pictures {
+        width: 185px;
+        height: 33px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__picture {
+        width: 33px;
+        height: 33px;
+    }
+}
+.container {
+}
